@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace FilmesAPI.Controllers;
 
-[Route("api/[controller]")]
+[Route("[controller]")]
 [ApiController]
 public class CinemaController : ControllerBase
 {
