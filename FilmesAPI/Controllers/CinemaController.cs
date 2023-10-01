@@ -59,7 +59,7 @@ public class CinemaController : ControllerBase
         return NoContent();
     }
 
-    [HttpDelete]
+    [HttpDelete("{id}")]
     public IActionResult DeletaCinema(int id)
     {
         Cinema cinema = _context.Cinemas.FirstOrDefault(cinema => cinema.Id == id);
